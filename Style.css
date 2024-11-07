@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+#article {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button#likeButton {
+  background-color: #007bff;
+  color: white;
+}
+
+button#repostButton {
+  background-color: #28a745;
+  color: white;
+}
+
+.share-buttons a, .share-buttons button {
+  display: inline-block;
+  margin-right: 10px;
+  color: #555;
+  text-decoration: none;
+  cursor: pointer;
+}
