@@ -37,3 +37,38 @@
   <script src="scripts.js"></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Sharing Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-auth.js"></script>
+</head>
+<body>
+  <!-- Create Post Form -->
+  <div id="createPost">
+    <h2>Create a New Post</h2>
+    <form onsubmit="createPost(event)">
+      <label for="postTitle">Title:</label>
+      <input type="text" id="postTitle" required>
+
+      <label for="postContent">Content:</label>
+      <textarea id="postContent" required></textarea>
+
+      <button type="submit">Add Post</button>
+    </form>
+  </div>
+
+  <!-- Display Articles -->
+  <div id="articles">
+    <!-- JavaScript will populate articles here -->
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+  </html>
