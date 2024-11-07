@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Sharing Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-auth.js"></script>
+</head>
+<body>
+  <div id="article">
+    <h1>Sample Article Title</h1>
+    <p>Here is some sample content for this article...</p>
+    
+    <!-- Like Button -->
+    <button id="likeButton" onclick="toggleLike('articleID')">
+      👍 Like (<span id="likeCount">0</span>)
+    </button>
+    
+    <!-- Repost Button -->
+    <button id="repostButton" onclick="repostArticle('articleID')">
+      🔁 Repost (<span id="repostCount">0</span>)
+    </button>
+    
+    <!-- Share Buttons -->
+    <div class="share-buttons">
+      <a href="#" onclick="shareToFacebook()">Share on Facebook</a>
+      <a href="#" onclick="shareToTwitter()">Share on Twitter</a>
+      <a href="#" onclick="shareToReddit()">Share on Reddit</a>
+      <button onclick="copyLink()">Copy Link</button>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
